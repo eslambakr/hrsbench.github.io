@@ -1,0 +1,204 @@
+<html lang="en">
+    <head>
+        <!-- Change title from here -->
+        <title>HRS-Bench</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="benchmarking.css" />
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+        <div class="container-fluid">
+            <!-- This is the navigation bar on the top -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Here is the first image and the link it goes to -->
+                <a class="nav-link active" href="index.html"><img src="./static/images/hrs_logo.png" width="100" /></a>
+                <div class="collapse navbar-collapse" id="nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <!-- Here is the second image and the link it goes to -->
+                            <a class="nav-link active" href="index.html"><img src="./static/images/Bench_Logo.png" width="80" /></a>
+                        </li>
+                        <!-- These are the items on the right -->
+                        <li class="nav-item"><a class="nav-link active" href="models.html">Models</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="quantitaive_results.html">Quantitaive Results</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="qualitative_results.html">Qualitative Results</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-right" id="summary" style="white-space: nowrap;">
+                </div>
+            </nav>
+    
+            <div class="row">
+                <div class="col-sm-12" id="main">
+                    <div>
+                        <h4>Models</h4>
+                        <table style="width:100%">
+                            <tr style="background-color: rgba(174, 177, 178, 0.4)">
+                                <th>Creator</th>
+                                <th>Model</th>
+                                <th>Description</th>
+                                <th>Access</th>
+                            </tr>
+                            <tr>
+                                <td>OpenAI</td>
+                                <td>
+                                    <div>
+                                        <div>DALL.E V2</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        Hierarchical Text-Conditional Image Generation with CLIP Latents 
+                                        (<a href="https://arxiv.org/pdf/2204.06125.pdf">Paper</a>,
+                                        <a href="https://openai.com/product/dall-e-2">Blog Post</a>).
+                                    </p>
+                                </td>
+                                <td><span class="access-limited btn"><a href="https://openai.com/product/dall-e-2"> API </a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ludwig Maximilian University of Munich</td>
+                                <td>
+                                    <div>
+                                        <div>Stable-Diffusion V1</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>High-Resolution Image Synthesis with Latent Diffusion Models 
+                                        (<a href="https://arxiv.org/pdf/2112.10752.pdf">Paper</a>,
+                                        <a href="https://stability.ai/blog/stable-diffusion-announcement">Blog Post</a>,
+                                        <a href="https://github.com/CompVis/stable-diffusion">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/CompVis/stable-diffusion">Open</a></span></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Stability-AI</td>
+                                <td>
+                                    <div>
+                                        <div>Stable-Diffusion V2</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>High-Resolution Image Synthesis with Latent Diffusion Models 
+                                        (
+                                        <a href="https://stability.ai/blog/stable-diffusion-v2-release">Blog Post</a>,
+                                        <a href="https://github.com/Stability-AI/stablediffusion">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/Stability-AI/stablediffusion">Open</a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>University of California & Google</td>
+                                <td>
+                                    <div>
+                                        <div>Structure-Difussion</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Training-Free Structured Diffusion Guidance for Compositional Text-to-Image Synthesis 
+                                        (<a href="https://openreview.net/pdf?id=PUIqjT4rzq7">Paper</a>,
+                                        <a href="https://weixi-feng.github.io/structure-diffusion-guidance/">Project Page</a>,
+                                        <a href="https://github.com/weixi-feng/Structured-Diffusion-Guidance">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/weixi-feng/Structured-Diffusion-Guidance">Open</a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Tsinghua University</td>
+                                <td>
+                                    <div>
+                                        <div>CogView V2</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>CogView2: Faster and Better Text-to-Image Generation via Hierarchical Transformers
+                                        (<a href="https://arxiv.org/abs/2204.14217">Paper</a>,
+                                        <a href="https://github.com/THUDM/CogView2">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/THUDM/CogView2">Open</a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>OpenAI</td>
+                                <td>
+                                    <div>
+                                        <div>Glide</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models
+                                        (<a href="https://proceedings.mlr.press/v162/nichol22a/nichol22a.pdf">Paper</a>,
+                                        <a href="https://github.com/openai/glide-text2im">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/openai/glide-text2im">Open</a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Technische Hochschule Ingolstadt</td>
+                                <td>
+                                    <div>
+                                        <div>Paella</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Fast Text-Conditional Discrete Denoising on Vector-Quantized Latent Spaces
+                                        (<a href="https://arxiv.org/pdf/2211.07292.pdf">Paper</a>,
+                                        <a href="https://github.com/dome272/Paella">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/dome272/Paella">Open</a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Community</td>
+                                <td>
+                                    <div>
+                                        <div>minDALL-E</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>minDALL-E
+                                        (<a href="https://github.com/kakaobrain/minDALL-E">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/kakaobrain/minDALL-E">Open</a></span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Community</td>
+                                <td>
+                                    <div>
+                                        <div>DALLEMini</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>DALLEMini
+                                        (<a href="https://github.com/borisdayma/dalle-mini">Github</a>).</p>
+                                </td>
+                                <td><span class="access-open btn"><a href="https://github.com/borisdayma/dalle-mini">Open</a></span></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.29.0/js/jquery.tablesorter.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+
+    </body>
+    
+
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
